@@ -1,8 +1,62 @@
 <!DOCTYPE html>
 <head>
     <title>Address</title>
+    <link rel="stylesheet" href="./secondayStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="./scripts/script.js" ></script>
+    
+    <!--  -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
-    <h1>Address</h1>
+    <div class="nav-bar">
+        <div class="links">
+            <div class="left-side">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+                <a class="menu font-family" href="menu.html">MENU</a>
+            </div>
+            <div class="location font-family">
+                <h2>Location</h2>
+            </div>
+            <div class="right-side">
+                <div class="search">
+                    <input class="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a class="shopping" href="shopping.html"><i class="fa fa-shopping-cart"></i></a>
+                <a class="log-in font-family" href="">Log in</a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="main-contents">
+        <div class="">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2740.5147005707795!2d-123.69320975266109!3d48.78422840111117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548f4f639d142097%3A0x2104b052c8abff69!2s2439%20Heather%20St%2C%20Duncan%2C%20BC%20V9L%202Z6!5e0!3m2!1sen!2sca!4v1666039057127!5m2!1sen!2sca" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="info-and-time">
+        <div class="address-info">
+            <h2>Address</h2> 
+            <p>2439 Heather St. 2439 Heather St, Duncan, BC V9L 2Z6</p>  
+            <p>Come pick up at the Front Door!</p>
+        </div>
+        <div class="schedule-time">
+            <h2>Hours of Operation</h2>
+            <p>Monday - Saturday 9:00 am - 2pm</p>
+            <p>Holidays 11:00 am - 2:00pm</p>
+        </div>
+   </div>
+    <footer>
+        <p class="font-family" >© 2022 Bok's 2 Go: Designed by Andrea, Daniella, Takami, Kana, Mateo, Jerry and Yanjun</p>
+        <div class="footer-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>

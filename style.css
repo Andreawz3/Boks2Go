@@ -1,60 +1,67 @@
 body {
     margin: 0;
 }
-.top-part{
+.nav-bar{
     height: 100vh;
-    background-image: url("./images/main-background.png");
-    /* background-position: center; */
+    background-image: url("./images/background.jpg");
     background-size: cover;
-    opacity: 0.9;
 }
-.nav-bar {
+.links {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 100px;
     padding-top: 40px;
 }
-.menu {
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-}
-.logo {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 35px;
-    left: 50%;
-}
-.nav-right {
+.left-side{
     display: flex;
     align-items: center;
 }
-.search {
-    margin: 0 10px;
-    display: block;
+.menu {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+.logo {
+    width: 85px;
+    height: 85px;
+    top: 35px;
+}
+.right-side {
+    width: 550px;
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    align-items: center;
 }
 .search input {
+    width: 75px;
     float: left;
     padding: 10px;
     border: 1px solid #888888;
     border-radius: 5px 0 0 5px;
+    font-size: 20px;
 }
 .search button {
     float: left;
-    padding: 10px;
+    padding: 10px 20px;
+    font-size: 20px;
     border: 1px solid #888888;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
+.shopping {
+    font-size: 40px;
+    color: white;
+}
 .log-in {
-    background-color: #FAE15D;
-    padding: 9px;
+    background-color: #ffc107;
+    padding: 8px 20px;
     border-radius: 10px;
-    color: #7e7e7e;
+    color: white;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
 }
 .name-address {
     position: absolute;
@@ -64,33 +71,104 @@ body {
     font-family: fantasy;
 }
 .name {
+    display: flex;
+    justify-content: center;
     color: white;
     margin: 0;
-    font-size: 100px;
+    font-size: 150px;
+    font-family: "Pacifico";
+    text-shadow: 2px 2px 8px black;
 } 
 .name-address a {
     margin: 0;
     font-size: 40px;
     text-align: center;
     text-decoration: none;
+    text-shadow: 2px 2px 8px black;
     color: white;
 
 }
 .about-chef {
     margin: 100px;
     display: flex;
+    gap: 50px;
     justify-content: space-between;
 }
 .chef-info {
     width: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
 }
 .chef-info h1 {
-    font-size: 60px;
+    margin: 0;
+    font-size: 50px;
 }
 .chef-info p {
-    font-size: 24px;
-    line-height: 1.5;
+    font-size: 20px;
+    line-height: 1.8;
     letter-spacing: 0.5px;
+    margin-top: 65px;
+}
+.about-chef img {
+    width: 50%;
+}
+.chef-recommendation {
+    margin: 100px;
+    /* width: 100%; */
+}
+.chef-recommendation h1 {
+    font-size: 50px;
+}
+.dishes-info{
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.dishes {
+    width: 100%;
+    margin-top: 50px;
+    border-radius: 5px;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dish-details {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.dish-img {
+    width: 385px;
+    height: 450px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.font-family {
+    font-family: system-ui;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7d867;
+}
+
+footer p {
+    padding: 30px 0px;
+    margin: 0 100px;
+}
+.footer-icons {
+    margin-right: 100px;
+}
+.footer-icons a {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
 }

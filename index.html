@@ -1,30 +1,36 @@
 <!DOCTYPE html>
 <head>
     <title>Bok's 2 Go</title>
-    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <script src="./scripts/script.js" ></script>
 </head>
 <body>
-    <div class="top-part">
-        <div class="nav-bar">
-            <a class="menu" href="menu.html">MENU</a>
-            <div class="nav-right">
-                <form class="search" action="">
-                    <input type="text" placeholder="Search.." name="searchFood">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-                <a class="log-in" href="">Log in</a>
+    <div class="nav-bar">
+        <div class="links">
+            <div class="left-side">
+                <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
+                <a class="menu font-family" href="menu.html">MENU</a>
+            </div>
+            <div class="right-side">
+                <div class="search">
+                    <input class="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
+                    <button class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a class="shopping" href="shopping.html"><i class="fa fa-shopping-cart"></i></a>
+                <a class="log-in font-family" href="">Log in</a>
             </div>
         </div>
-        <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
         <div class="name-address">
             <h1 class="name">Bok's 2 Go</h1>
-            <a href="address.html">Address</a>
+            <a class="font-family" href="address.html">2439 Heather St. Duncan BC V9L 2Z6</a>
         </div>
     </div>
     <div class="about-chef">
         <div class="chef-info">
-            <h1>About the Chef:</h1>
-            <p>
+            <h1 class="font-family">About the Chef:</h1>
+            <p class="font-family">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing 
                 elit, sed do eiusmod tempor incididunt ut labore et dolore 
                 magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -48,7 +54,59 @@
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
         </div>
-        <img class="chef-image" src="images/chef.avif" alt="chef-pic">
+        <img class="chef-image" src="images/chef.jpg" alt="chef-pic">
     </div>
+    <div class="chef-recommendation">
+        <h1 class="font-family">Chef Recommendations</h1>
+        <div class="dishes-info">
+            <div class="dishes">
+                <img class="dish-img" src="images/lumpia.jpg" alt="">
+                <div class="dish-details">
+                    <div>
+                        <h2 class="font-family">lumpias</h2>
+                        <p class="font-family">24 pcs of deep fried spring rolls with vegetables and pork</p>
+                    </div>
+                    <h2 class="font-family">$24</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <img class="dish-img" src="images/chicken-caldereta.jpeg" alt="">
+                <div class="dish-details">
+                    <div>
+                        <h2 class="font-family">Chicken Caldereta</h2>
+                        <p class="font-family">Stewed goat meat with liver paste, tomatoes, potatoes, olives, bell peppers, and hot peppers.</p>
+                    </div>
+                    <h2 class="font-family">$20</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <img class="dish-img" src="images/empanada.png" alt="">
+                <div class="dish-details">
+                    <div>
+                        <h2 class="font-family">Empanadas</h2>
+                        <p class="font-family">2 pcs of flaky crust traditionally filled with ground beef sautéed with onions, peas, raisins, and potatoes</p>
+                    </div>
+                    <h2 class="font-family">$12</h2>
+                </div>
+            </div>
+            <div class="dishes">
+                <img class="dish-img" src="images/beef-camto.jpeg" alt="">
+                <div class="dish-details">
+                    <div>
+                        <h2 class="font-family">Beef Camto</h2>
+                        <p class="font-family">Marinated beef stir-fried with onion, garlic, snow peas, green peas, carrot, celery, and red bell pepper.</p>
+                    </div>
+                    <h2 class="font-family">$28</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p class="font-family" >© 2022 Bok's 2 Go: Designed by Andrea, Daniella, Takami, Kana, Mateo, Jerry and Yanjun</p>
+        <div class="footer-icons">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+    </footer>
 </body>
 </html>
