@@ -15,7 +15,7 @@
             </div>
             <div class="right-side">
                 <div class="search">
-                    <input class="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
+                    <input id="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
                     <button class="search-icon"><i class="fa fa-search"></i></button>
                 </div>
                 <a class="shopping" href="shopping.html"><i class="fa fa-shopping-cart"></i></a>
@@ -27,8 +27,8 @@
             <a class="font-family" href="address.html">2439 Heather St. Duncan BC V9L 2Z6</a>
         </div>
     </div>
-    <div class="about-chef">
-        <div class="chef-info">
+    <div id="about-chef">
+        <div id="chef-info">
             <h1 class="font-family">About the Chef:</h1>
             <p class="font-family">
                 "Lorem ipsum dolor sit amet, consectetur adipiscing 
@@ -54,11 +54,11 @@
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
             </p>
         </div>
-        <img class="chef-image" src="images/chef.jpg" alt="chef-pic">
+        <img id="chef-image" src="images/chef.jpg" alt="chef-pic">
     </div>
     <div class="chef-recommendation">
         <h1 class="font-family">Chef Recommendations</h1>
-        <div class="dishes-info">
+        <div id="dishes-info">
             <div class="dishes">
                 <img class="dish-img" src="images/lumpia.jpg" alt="">
                 <div class="dish-details">

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Menu</title>
-    <link rel="stylesheet" href="./secondayStyle.css">
+    <link rel="stylesheet" href="./menu.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/script.js" ></script>
 </head>
@@ -12,9 +12,12 @@
                 <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
                 <a class="menu font-family menu-selected" href="menu.html">MENU</a>
             </div>
+            <div class="menu-title font-family">
+                <h2>Menu</h2>
+            </div>
             <div class="right-side">
                 <div class="search">
-                    <input class="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
+                    <input id="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
                     <button class="search-icon"><i class="fa fa-search"></i></button>
                 </div>
                 <a class="shopping" href="shopping.html"><i class="fa fa-shopping-cart"></i></a>
@@ -23,6 +26,28 @@
         </div>
     </div>
     <hr>
+    <div class="food-desc" >
+        <div class="image-and-arrow">
+            <a>❮</a>
+            <img src="./images/bbq.jpeg" alt="">
+            <a>❯</a>
+        </div>
+        <div class="food-description">
+            <div class="detail">
+                <h2 class="font-family">Barbeque</h2> 
+                <p class="font-family">Boneless rump roast, pineapple juice, beer, soy sauce, brown sugar and oyster sauce</p>
+            </div>
+            <div class="cost">
+                <h2>$24</h2>
+                <div class="quantity">
+                    <form action="/menu.html">
+                        <input class="add" type="number" class="rounded-input" placeholder="1" min="1" max="100">
+                        <input type="submit" class="rounded-input" value="Add to cart">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <p class="font-family" >© 2022 Bok's 2 Go: Designed by Andrea, Daniella, Takami, Kana, Mateo, Jerry and Yanjun</p>
         <div class="footer-icons">

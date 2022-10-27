@@ -1,0 +1,187 @@
+body {
+    margin: 0;
+}
+.nav-bar{
+    height: 160px;
+}
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 250px;
+    /* padding-top: 40px; */
+}
+.left-side{
+    display: flex;
+    align-items: center;
+}
+.menu {
+    margin-left: 20px;
+    color: #ff9800;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 24px;
+}
+.menu-selected {
+    color: black;
+    border-bottom: 2px solid black;
+}
+.logo {
+    width: 85px;
+    height: 85px;
+    top: 35px;
+}
+.menu-title h2 {
+    padding-left: 180px;
+    font-size: 60px;
+}
+.right-side {
+    width: 550px;
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+    align-items: center;
+}
+.search input {
+    width: 75px;
+    float: left;
+    padding: 10px;
+    border: 1px solid #888888;
+    border-radius: 5px 0 0 5px;
+    font-size: 20px;
+}
+.search button {
+    float: left;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 1px solid #888888;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.shopping {
+    font-size: 40px;
+    color: #ffc107;
+}
+.log-in {
+    color: #ffc107;
+    text-decoration: none;
+    font-size: 40px;
+}
+.food-desc{
+    margin: 30px 250px 100px 250px;
+}
+.image-and-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* border: 1px solid #afaaaa; */
+    border-radius: 10px;
+}
+.image-and-arrow img {
+    width: inherit;
+    height: fit-content;
+    margin: 30px 50px;
+    border-radius: 10px;
+}
+.image-and-arrow a {
+    font-size: 60px;
+    cursor: pointer;
+    /* padding: 5px 10px;
+    border: 1px solid #bb8c00;
+    border-radius: 10px; */
+    color:#ff9800;
+}
+.font-family {
+    font-family: system-ui;
+}
+.food-description{
+    display: flex;
+    justify-content: space-between;
+}
+.detail{
+    display: flex;
+    justify-content: normal;
+    /* margin: 0 100px; */
+    flex-direction: column;
+    /* margin-top: 10px; */
+}
+.detail h2 {
+    font-size: 40px;
+}
+.detail p {
+    margin: 0;
+    font-size: 24px;
+}
+.cost{
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 100px;
+    padding: 30px; */
+}
+.cost h2{
+    font-size: 40px;
+    align-self: end;
+}
+
+.quantity{
+    margin: 0 12px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    flex-direction: row-reverse;
+}
+.add {
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center;
+}
+.rounded-input{
+    background-color: #ff9800;
+    padding: 10px;
+    font-size: 24px;
+    /* border-radius: 5px; */
+    width: 100%;
+    /* margin-bottom: 15px; */
+}
+
+/* input[type=number]{
+    padding: 20px;
+} */
+/* input[type=submit]{
+    padding: 20px;
+} */
+
+input{
+    border: 1px grey;
+    box-sizing: border-box;
+}
+
+form{
+    display: flex;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7d867;
+}
+footer p {
+    padding: 30px 0px;
+    margin: 0 250px;
+}
+.footer-icons {
+    margin-right: 250px;
+}
+.footer-icons a {
+    margin-left: 10px;
+    padding: 10px;
+    font-size: 25px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: black;
+}
