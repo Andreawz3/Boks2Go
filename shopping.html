@@ -6,6 +6,72 @@
     <script src="./scripts/script.js" ></script>
 </head>
 <body>
+    <div id="modal-box">
+        <div class="modal-box">
+            <div class="card-info">
+                <div class="card-name">
+                    <h1>Card Detail</h1> 
+                    <span onclick="closeButton()">Close</span>
+                </div>
+                <form class="form">
+                    <label for="Name">Name</label><br>
+                    <input class="Name" type="text" name="Name">
+                    <div class="card-number">
+                        <div class="card-num">
+                            <label for="Card-Number">Card Number</label><br>
+                            <input class="Card-Number" type="text" name="Card-Number" width="200px"><br>
+                        </div>
+                        <div class="CVV">
+                            <label for="CVV">CVV</label><br>
+                            <input class="CVV-w"type="text" name="CVV">
+                        </div> 
+                    </div>
+                    <div class="card-type">
+                        <div>
+                            <!-- <label for="Expire-Date">Expire Date</label><br>
+                            <input type="text" name="Expire-Date">
+                            <label for="Expire-Date">Expire Date</label> -->
+                            <label for="Expire-Date">Expire Date</label><br>
+                            <div class="date">
+                                <select class="Expire-Date" name="Expire-Date" id="Expire-Date">
+                                    <option value="Jan">Jan</option>
+                                    <option value="Feb">Feb</option>
+                                    <option value="Mar">Mar</option>
+                                    <option value="Apr">Apr</option>
+                                    <option value="May">May</option>
+                                    <option value="Jun">Jun</option>
+                                    <option value="Jul">Jul</option>
+                                    <option value="Aug">Aug</option>
+                                    <option value="Sep">Sep</option>
+                                    <option value="Oct">Oct</option>
+                                    <option value="Nov">Nov</option>
+                                    <option value="Dec">Dec</option>
+                                </select>
+                                <select class="Expire-Date" name="Expire-Date" id="Expire-Date">
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pay-img">
+                            <i class="fa fa-cc-visa"></i>
+                            <i class="fa fa-cc-mastercard"></i>
+                        </div>
+                    </div>
+                </form>
+                <div class="accept">
+                    <button type="button">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="nav-bar">
         <div class="links">
             <div class="left-side">
@@ -26,6 +92,7 @@
         </div>
     </div>
     <hr>
+    
     <div class="both-screens">
         <div class="left-screen">
             <div class="row">
@@ -83,7 +150,7 @@
                 </form>
                 <div class="order-action">
                     <input class="submit-button" type="button" value="Add More Items" />
-                    <input class="submit-button" type="button" value="Pay Now" />
+                    <input onclick="modalBox()" class="submit-button" type="button" value="Pay Now" />
                     <input class="submit-button" type="button" value="Pay In Person" />
                 </div>
             </div>
