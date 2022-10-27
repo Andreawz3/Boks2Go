@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
     <title>Shopping Cart</title>
-    <link rel="stylesheet" href="./secondayStyle.css">
+    <link rel="stylesheet" href="./shopping.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="./scripts/script.js" ></script>
 </head>
@@ -12,17 +12,84 @@
                 <a href="index.html"><img class="logo" src="images/logo.png" alt="logo"></a>
                 <a class="menu font-family" href="menu.html">MENU</a>
             </div>
+            <div class="shop-list font-family">
+                <h2>Shopping List</h2>
+            </div>
             <div class="right-side">
                 <div class="search">
                     <input class="input" type="text" placeholder="Search.." onclick="search()" onblur="unselect()">
                     <button class="search-icon"><i class="fa fa-search"></i></button>
                 </div>
                 <a class="shopping shop-selected" href="shopping.html"><i class="fa fa-shopping-cart"></i></a>
-                <a class="log-in font-family" href="">Log in</a>
+                <a class="log-in font-family" href=""><i class="fa fa-user-circle"></i></a>
             </div>
         </div>
     </div>
     <hr>
+    <div class="both-screens">
+        <div class="left-screen">
+            <div class="row">
+                <img src="./images/pancit-edited.png" alt="Pancit" />
+                <div class="details">
+                    <h2 class="dish-name">Pancit</h2>
+                    <div id="order-input">
+                        <button type="button">-</button>
+                        <input type="text" value="1" id="input" />
+                        <button>+</button>
+                    </div>
+                    <h2 class="price">$ 7.00 CAD</h2>
+                    <button class="delete">Remove</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/caldereta-edited.png" alt="caldereta" />
+                <div class="details">
+                    <h2 class="dish-name">Caldereta</h2>
+                    <div id="order-input">
+                        <button type="button">-</button>
+                        <input type="text" value="1" id="input" />
+                        <button>+</button>
+                    </div>
+                    <h2 class="price">$ 20.00 CAD</h2>
+                    <button class="delete">Remove</button>
+                </div>
+            </div>
+            <div class="row">
+                <img src="./images/pork-sisig-edited.png" alt="pork-sisig" />
+                <div class="details">
+                    <h2 class="dish-name">Pork Sisig</h2>
+                    <div id="order-input">
+                        <button type="button">-</button>
+                        <input type="text" value="1" id="input" />
+                        <button>+</button>
+                    </div>
+                    <h2 class="price">$ 20.00 CAD</h2>
+                    <button class="delete">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-screen">
+            <div class="payment-detail">
+                <div class="order-total">
+                    <h2 class="change-to-white">Estimated Total:</h2>
+                    <h3 class="change-to-white">$47.00 CAD</h3>
+                    <hr />
+                </div>
+                <form id="notes" action="./index.html" method="post">
+                    <div class="notes-for-order">
+                        <p class="change-to-white">Order Notes:</p>
+                        <textarea name="notes" i d="note-section"></textarea>
+                    </div>
+                </form>
+                <div class="order-action">
+                    <input class="submit-button" type="button" value="Add More Items" />
+                    <input class="submit-button" type="button" value="Pay Now" />
+                    <input class="submit-button" type="button" value="Pay In Person" />
+                </div>
+            </div>
+            <h2 class="message">Thank you for shopping from us <br> Have a great day!</h2>
+        </div>
+    </div>
     <footer>
         <p class="font-family" >© 2022 Bok's 2 Go: Designed by Andrea, Daniella, Takami, Kana, Mateo, Jerry and Yanjun</p>
         <div class="footer-icons">

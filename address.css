@@ -9,7 +9,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 250px;
-    padding-top: 40px;
 }
 .left-side{
     display: flex;
@@ -85,10 +84,8 @@ footer p {
     border: 2px solid black;
     color: black;
 }
-
-/* Location Page Style */
 .location h2 {
-    margin-left: 100px;
+    padding-left: 180px;
     font-size: 60px;
 }
 .map {
@@ -109,10 +106,3 @@ footer p {
 .address-info p, .schedule-time p {
     font-size: 22px;
 } 
-
-
-/* Menu Style */
-.menu-selected {
-    color: black;
-    border-bottom: 2px solid black;
-}
