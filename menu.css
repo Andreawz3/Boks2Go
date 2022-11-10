@@ -9,7 +9,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: 0 250px;
-    /* padding-top: 40px; */
 }
 .left-side{
     display: flex;
@@ -43,7 +42,7 @@ body {
     align-items: center;
 }
 .search input {
-    width: 75px;
+    width: 100px;
     float: left;
     padding: 10px;
     border: 1px solid #888888;
@@ -75,22 +74,36 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    /* border: 1px solid #afaaaa; */
     border-radius: 10px;
 }
-.image-and-arrow img {
-    width: inherit;
+#foodImgOne {
+    display: block;
+    position: relative;
+    width: 800px;
     height: fit-content;
     margin: 30px 50px;
     border-radius: 10px;
 }
+.displayImg{
+    margin: 30px 50px;
+    position: relative;
+    width: 800px;
+    height: 450px;
+    display: none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+@keyframes fade {
+from {opacity: 0.5} 
+to {opacity: 1}
+}
 .image-and-arrow a {
     font-size: 60px;
     cursor: pointer;
-    /* padding: 5px 10px;
-    border: 1px solid #bb8c00;
-    border-radius: 10px; */
     color:#ff9800;
+    text-decoration: none;
 }
 .font-family {
     font-family: system-ui;
@@ -102,9 +115,7 @@ body {
 .detail{
     display: flex;
     justify-content: normal;
-    /* margin: 0 100px; */
     flex-direction: column;
-    /* margin-top: 10px; */
 }
 .detail h2 {
     font-size: 40px;
@@ -116,14 +127,11 @@ body {
 .cost{
     display: flex;
     flex-direction: column;
-    /* margin: 0 100px;
-    padding: 30px; */
 }
 .cost h2{
     font-size: 40px;
     align-self: end;
 }
-
 .quantity{
     margin: 0 12px;
     font-size: 30px;
@@ -141,23 +149,12 @@ body {
     background-color: #ff9800;
     padding: 10px;
     font-size: 24px;
-    /* border-radius: 5px; */
     width: 100%;
-    /* margin-bottom: 15px; */
 }
-
-/* input[type=number]{
-    padding: 20px;
-} */
-/* input[type=submit]{
-    padding: 20px;
-} */
-
 input{
     border: 1px grey;
     box-sizing: border-box;
 }
-
 form{
     display: flex;
 }

@@ -1,4 +1,6 @@
 window.onscroll = (e) => {
+
+    // Slides in 'About Chef' on Main Page
     if (window.scrollY > 160) {
         const aboutChef = document.getElementById('chef-info');
         aboutChef.classList.add('slidingInfo');
@@ -11,6 +13,8 @@ window.onscroll = (e) => {
         chefRecom.classList.add('slidingChefRec');
     }
 }
+
+// Search Bar Animation on Navigation Bar
 function search() {
     const input = document.getElementById('input');
     input.style.width = '200px';
@@ -21,6 +25,8 @@ function unselect() {
         input.style.width = '75px'
     }
 }
+
+// Modal Box for Card Info on Shopping Cart Page
 function modalBox() {
     const cardInfo = document.getElementById('modal-box');
     cardInfo.style.display = 'block';
@@ -32,3 +38,31 @@ function closeButton() {
         cardInfo.style.display = 'none';
     }
 }
+
+
+// Carousel Images on Menu Page
+let slideIndex = 1;
+
+slidesAppear(slideIndex);
+
+function nextImg(n) {
+    slidesAppear(slideIndex += n);
+};
+
+function slidesAppear(n) {
+    const slidesImgs = document.getElementsByClassName("slidesImg");
+
+    if(n > slidesImgs.length) {
+        slideIndex = 1;
+    };
+    if(n < 1) {
+        slideIndex = slidesImgs.length;
+    };
+    for(let i = 0; i < slidesImgs.length; i++) {
+        slidesImgs[i].style.display = "none";
+    }
+
+    slidesImgs[slideIndex-1].style.display = "block";
+};
+
+
