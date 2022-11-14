@@ -1,8 +1,10 @@
 body {
     margin: 0;
+    font-family: system-ui;
+    background-color: #f5f5f5;
 }
 .nav-bar{
-    height: 160px;
+    height: 125px;
 }
 .links {
     display: flex;
@@ -16,10 +18,13 @@ body {
 }
 .menu {
     margin-left: 20px;
-    color: #ff9800;
+    color: #ffc107;
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
+}
+.menu:hover {
+    color: #ff9800;
 }
 .logo {
     width: 85px;
@@ -39,24 +44,33 @@ body {
     padding: 10px;
     border: 1px solid #888888;
     border-radius: 5px 0 0 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 .search button {
     float: left;
-    padding: 10px 20px;
-    font-size: 20px;
+    padding: 10px;
+    font-size: 15px;
     border: 1px solid #888888;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
 }
+.search button:hover {
+    background-color: #ff9800;
+}
 .shopping {
-    font-size: 40px;
+    font-size: 35px;
     color: #ffc107;
+}
+.shopping:hover {
+    color: #ff9800;
 }
 .log-in {
     color: #ffc107;
     text-decoration: none;
-    font-size: 40px;
+    font-size: 35px;
+}
+.log-in:hover {
+    color: #ff9800;
 }
 .font-family {
     font-family: system-ui;
@@ -72,22 +86,27 @@ footer p {
     margin: 0 250px;
 }
 .footer-icons {
+    display: flex;
     margin-right: 250px;
 }
 .footer-icons a {
     margin-left: 10px;
     padding: 10px;
-    font-size: 25px;
-    width: 30px;
+    font-size: 15px;
+    width: 15px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
     border: 2px solid black;
     color: black;
 }
+.footer-icons a:hover {
+    border: 2px solid #ff9800;
+    color: #ff9800;
+}
 .location h2 {
     padding-left: 180px;
-    font-size: 60px;
+    font-size: 45px;
 }
 .map {
     width: -webkit-fill-available;
@@ -102,8 +121,60 @@ footer p {
 }
 .address-info h2, .schedule-time h2 {
     margin: 0;
-    font-size: 40px;
+    font-size: 30px;
 }
 .address-info p, .schedule-time p {
-    font-size: 22px;
+    font-size: 16px;
 } 
+.style {
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:768px){
+    .location h2 {
+        padding-left: 50px;
+        font-size: 60px;
+    }
+    .links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 0px;
+    }
+    .map {
+        width: -webkit-fill-available;
+        height: 75vh;
+        margin: 0 100px;
+        border-radius: 5px;
+    }
+    .info-and-time{
+        margin: 30px 100px 50px 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+    footer p {
+        padding: 30px 0px;
+        margin: 0 100px;
+    }
+    .footer-icons {
+        display: flex;
+        margin-right: 100px;
+    }
+    .search input {
+        width: 65px;
+        float: left;
+        padding: 4px;
+        border: 1px solid #888888;
+        border-radius: 5px 0 0 5px;
+        font-size: 14px;
+    }
+    .search button {
+        float: left;
+        padding: 4px 10px;
+        font-size: 14px;
+        border: 1px solid #888888;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+}
