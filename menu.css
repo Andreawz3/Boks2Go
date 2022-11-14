@@ -135,8 +135,9 @@ body {
     flex-direction: column;
 }
 .cost h2 {
-    font-size: 35px;
+    font-size: 30px;
     align-self: end;
+    font-family: system-ui;
 }
 .quantity {
     margin: 0 12px;
